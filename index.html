@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MC Urubu do Asfalto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="brasao.svg" alt="Brasão MC Urubu do Asfalto">
+    <h1>MC Urubu do Asfalto</h1>
+
+    <!-- Botão menu mobile -->
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </header>
+
+  <nav id="menuNav" class="menu-nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p class="texto-central">
+      Aqui vai entrar a história oficial do MC Urubu do Asfalto, contando sobre sua fundação,
+      tradições e conquistas ao longo dos anos. 🚀
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://picsum.photos/400/300?random=1" alt="Foto do motoclube">
+      <img src="https://picsum.photos/400/300?random=2" alt="Foto do motoclube">
+      <img src="https://picsum.photos/400/300?random=3" alt="Foto do motoclube">
+      <img src="https://picsum.photos/400/300?random=4" alt="Foto do motoclube">
+    </div>
+  </section>
+
+  <section id="eventos">
+    <h2>Próximos Eventos</h2>
+    <ul class="lista-eventos">
+      <li>🏍 Encontro Regional - 15/09/2025</li>
+      <li>🔥 Churrasco dos Irmãos - 22/09/2025</li>
+      <li>🌎 Viagem Nacional - 05/10/2025</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MC Urubu do Asfalto - Todos os direitos reservados</p>
+  </footer>
+
+  <button id="btnTopo" onclick="voltarTopo()">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
