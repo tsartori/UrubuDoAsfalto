@@ -182,3 +182,21 @@ footer {
     display: flex;
   }
 }
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #E1306C; /* cor oficial do Insta */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-instagram:hover {
+  background: #c82361;
+}
+.btn-instagram svg {
+  flex-shrink: 0;
+}
