@@ -8,36 +8,34 @@
 </head>
 <body>
 
-  <header>
-    <img src="brasao.svg" alt="Brasão MC Urubu do Asfalto">
-    <h1>MC Urubu do Asfalto</h1>
+<header>
+  <img src="brasao.svg" alt="Brasão MC Urubu do Asfalto">
+  <h1>MC Urubu do Asfalto</h1>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</header>
 
-    <!-- Botão menu mobile -->
-    <button id="menuBtn" class="menu-btn">☰</button>
-  </header>
+<nav id="menuNav" class="menu-nav">
+  <a href="#sobre">Sobre</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#eventos">Eventos</a>
+  <a href="#contato">Contato</a>
+</nav>
 
-  <nav id="menuNav" class="menu-nav">
-    <a href="#sobre">Sobre</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p class="texto-central">
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p class="texto-central">
       <p>***SITE EM CONSTRUÇÃO***</p>
 	  <br><p style="text-align: justify">O Moto Clube Urubu do Asfalto foi fundado em 28 de setembro de 1998, na cidade de Visconde do Rio Branco – MG, sendo reconhecido como o primeiro moto clube da região.
 	<br>Surgiu da união de motociclistas apaixonados pela estrada, que se reuniram com o objetivo de preservar a cultura motociclística, promover a amizade, a solidariedade e o espírito de liberdade sobre duas rodas.
 Sua sede inicial foi estabelecida provisoriamente na Rua Dr. Theophilo Dubaigh, nº 346, no centro da cidade. Desde então, o MC Urubu do Asfalto vem marcando presença em encontros, eventos e viagens, sempre cultivando a irmandade e o respeito entre motociclistas.
 Com quase três décadas de história, o clube mantém viva sua essência: a união de pessoas que compartilham a paixão pelo motociclismo e a estrada, levando o nome de Visconde do Rio Branco para diversas regiões do país. 🚀
     </p>
-  </section>
+</section>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="galeria">
-	  <img src="img/Pirapanema - Rest alto da serra.jpg" alt="Confraternização Rest. Alto da Serra - Pirapanema">
+<section id="galeria">
+  <h2>Galeria</h2>
+  <div class="galeria">
+      <img src="img/Pirapanema - Rest alto da serra.jpg" alt="Confraternização Rest. Alto da Serra - Pirapanema">
       <img src="img/reuniao25-09-12.jpg" alt="Foto do motoclube">
       <img src="img/1.jpg" alt="Foto do motoclube">
       <img src="img/2.jpg" alt="Foto do motoclube">
@@ -55,9 +53,8 @@ Com quase três décadas de história, o clube mantém viva sua essência: a uni
       <img src="img/CafeDiojoJF.jpg" alt="Café da manhã - Sitio Diogo JF">
       <img src="img/12+1.jpg" alt="Foto do motoclube">
       <img src="img/reuniao.jpg" alt="Foto do motoclube">
-
-    </div>
-  </section>
+  </div>
+</section>
 
   <section id="eventos">
     <h2>Próximos Eventos</h2>
@@ -91,8 +88,16 @@ Com quase três décadas de história, o clube mantém viva sua essência: a uni
 </p>
 </footer>
 
-  <button id="btnTopo" onclick="voltarTopo()">↑</button>
+<button id="btnTopo" onclick="voltarTopo()">↑</button>
 
-  <script src="script.js"></script>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="fechar">&times;</span>
+  <span class="seta esquerda">&#10094;</span>
+  <img id="img-grande">
+  <span class="seta direita">&#10095;</span>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
